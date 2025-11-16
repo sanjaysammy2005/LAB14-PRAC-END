@@ -32,7 +32,7 @@ jobs:
           context: ./EmployeeManagementSystem
           file: ./EmployeeManagementSystem/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab12prac-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/lab14prac-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./frontend
           file: ./frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/lab12prac-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/lab14prac-frontend:latest
